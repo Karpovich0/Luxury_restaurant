@@ -71,5 +71,46 @@ select {
 
 /* ==================END================== */
 body {
-  font-size: 14px;
+  background-color: aquamarine;
+}
+
+.svg {
+  display: none;
+}
+
+.svg__cart {
+  width: 24px;
+  height: 20px;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__dish {
+  float: left;
 }

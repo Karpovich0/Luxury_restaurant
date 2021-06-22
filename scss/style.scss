@@ -1,4 +1,40 @@
     @import "DDS";
     body {
-        font-size: 14px;
+        background-color: aquamarine;
+    }
+    
+    .svg {
+        display: none;
+        &__cart {
+            width: 24px;
+            height: 20px;
+        }
+    }
+    
+    .container {
+        width: 1200px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    
+    .header {
+        padding: 20px 0;
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__logo {}
+        &__link {}
+        &__nav {
+            display: flex;
+        }
+        &__cart {}
+        &__book {}
+        &__dish {
+            float: left;
+        }
+    }
+    
+    .nav {
+        &__item {}
     }
