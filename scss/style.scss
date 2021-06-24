@@ -3,6 +3,14 @@
         background-color: aquamarine;
     }
     
+    // fonts
+    // font-family: 'Playfair Display', serif;
+    // font-family: 'Sintony', sans-serif;
+    $Sintony:'Sintony',
+    sans-serif;
+    $PlayfairDisplay: 'Playfair Display',
+    serif;
+    // svg
     .svg {
         display: none;
         &__cart {
@@ -11,6 +19,7 @@
         }
     }
     
+    // container
     .container {
         width: 1200px;
         padding: 0 15px;
@@ -23,18 +32,87 @@
             display: flex;
             justify-content: space-between;
         }
-        &__logo {}
-        &__link {}
+        &__logo {
+            vertical-align: middle;
+        }
+        &__link {
+            display: inline-block;
+        }
         &__nav {
+            padding-left: 50px;
             display: flex;
         }
-        &__cart {}
-        &__book {}
+        &__img {
+            margin-right: 12px;
+        }
+        &__cart {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__circle {
+            position: absolute;
+            top: 4px;
+            left: 15px;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            background-color: #fe4c8d;
+            text-align: center;
+            vertical-align: middle;
+            // text styles
+            font-family: $Sintony;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            color: #ffffff;
+        }
+        &__book {
+            position: relative;
+            background-color: #fea100;
+            border-radius: 4px;
+            padding: 4px;
+        }
+        &__table {
+            background-color: #fea100;
+            border: 1px solid #ffffff;
+            padding: 9px 15px 9px 50px;
+            border-radius: 3px;
+        }
         &__dish {
-            float: left;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 20px;
+        }
+        &__text {
+            font-family: $Sintony;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            color: #ffffff;
         }
     }
     
+    // end header
     .nav {
-        &__item {}
+        display: flex;
+        align-items: center;
+        &__item {
+            margin: 0 15px;
+            display: inline-block;
+            font-family: $Sintony;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            color: #2c465a;
+            text-decoration: none;
+        }
+        &__item:last-child {
+            margin-right: 30px;
+        }
     }
